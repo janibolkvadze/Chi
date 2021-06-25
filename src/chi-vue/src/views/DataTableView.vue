@@ -276,6 +276,7 @@ import ColumnCustomization from '../components/column-customization/ColumnCustom
         },
         body: [
           {
+            expanded: true,
             id: 'NTM000021063',
             nestedContent: {
               template: 'loadingSkeleton',
