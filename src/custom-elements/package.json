@@ -18,7 +18,9 @@
     "test.watch": "stencil test --spec --e2e --watchAll"
   },
   "dependencies": {
-    "dayjs": "1.8.29",
+    "@laps.no/intl-tel-input": "^1.2.2",
+    "dayjs": "^1.10.7",
+    "libphonenumber-js": "^1.9.34",
     "popper.js": "^1.15.0"
   },
   "devDependencies": {

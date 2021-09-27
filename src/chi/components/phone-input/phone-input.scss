@@ -1,0 +1,24 @@
+.chi-phone-input {
+  display: flex;
+  flex-direction: row;
+
+  .chi-dropdown__menu-items {
+    max-height: 10rem;
+    overflow-y: auto;
+
+    .-text--grey {
+      margin-left: 0.2rem;
+    }
+  }
+
+  .flag {
+    img {
+      height: auto;
+      max-height: 1rem;
+      max-width: 1.4rem;
+      margin-right: 0.4rem;
+      vertical-align: middle;
+      width: auto;
+    }
+  }
+}
