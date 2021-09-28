@@ -1,4 +1,5 @@
 import { Component, Event, EventEmitter, Prop, h, JSX, State } from '@stencil/core';
+import parsePhoneNumber from 'libphonenumber-js';
 
 const DEFAULT_PREFIX = '+1';
 
@@ -48,6 +49,14 @@ export class ChiPhoneInput {
       this.chiInput.emit('');
     }
   };
+
+  componentWillLoad() {
+    const phoneNumber = parsePhoneNumber('(213) 373-42-53 ext. 1234', 'US');
+
+    if (phoneNumber) {
+      console.log(phoneNumber.formatNational())
+    }
+  }
 
   render(): JSX.Element {
     return (
